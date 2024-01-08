@@ -165,8 +165,6 @@
 				5736A6472B498E530045A653 /* LaunchScreen.storyboard */,
 				5736A64A2B498E530045A653 /* Info.plist */,
 				5736A64B2B498E530045A653 /* main.m */,
-				5736A6802B4A68690045A653 /* NewsDetailController.h */,
-				5736A6812B4A68690045A653 /* NewsDetailController.m */,
 			);
 			path = NewsReader;
 			sourceTree = "<group>";
@@ -191,14 +189,9 @@
 		5736A6732B4997870045A653 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				5736A6942B4C1E930045A653 /* List */,
+				5736A6932B4C1E830045A653 /* Details */,
 				5736A6752B4997C80045A653 /* Models */,
-				5736A6742B4997A40045A653 /* Views */,
-				5736A63F2B498E520045A653 /* NewsListController.h */,
-				5736A6402B498E520045A653 /* NewsListController.m */,
-				5736A68A2B4BECEE0045A653 /* NewsListViewModel.h */,
-				5736A68B2B4BECEE0045A653 /* NewsListViewModel.m */,
-				5736A68D2B4BED310045A653 /* NewsArticleViewModel.h */,
-				5736A68E2B4BED310045A653 /* NewsArticleViewModel.m */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -244,6 +237,37 @@
 				5736A6912B4BF3BB0045A653 /* NSDate+Format.m */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		5736A6932B4C1E830045A653 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				5736A6802B4A68690045A653 /* NewsDetailController.h */,
+				5736A6812B4A68690045A653 /* NewsDetailController.m */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		5736A6942B4C1E930045A653 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				5736A6952B4C1EB20045A653 /* ViewModel */,
+				5736A63F2B498E520045A653 /* NewsListController.h */,
+				5736A6402B498E520045A653 /* NewsListController.m */,
+				5736A6742B4997A40045A653 /* Views */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		5736A6952B4C1EB20045A653 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5736A68A2B4BECEE0045A653 /* NewsListViewModel.h */,
+				5736A68B2B4BECEE0045A653 /* NewsListViewModel.m */,
+				5736A68D2B4BED310045A653 /* NewsArticleViewModel.h */,
+				5736A68E2B4BED310045A653 /* NewsArticleViewModel.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		6B98F703A1139B06888BB8DB /* Pods */ = {
