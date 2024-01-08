@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 
-@interface NetworkManager : NSObject
+@interface NetworkManager: NSObject
 
 - (void) getNews:(NSString *) apiKey
             page:(NSUInteger) page

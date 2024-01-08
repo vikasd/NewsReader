@@ -6,30 +6,32 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "NewsListViewModel.h"
 
 @interface NewsReaderTests : XCTestCase
+
+@property (nonatomic, strong) NewsListViewModel *listViewModel;
 
 @end
 
 @implementation NewsReaderTests
 
 - (void)setUp {
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    [super setUp];
+    self.listViewModel = [[NewsListViewModel alloc] init];
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    self.listViewModel = nil;
+    [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testEmptyArticlesArray {
+    XCTAssertNil([self.listViewModel getArticle: 0], @"Should return nil if article is not present.");
 }
 
 - (void)testPerformanceExample {
-    // This is an example of a performance test case.
     [self measureBlock:^{
-        // Put the code you want to measure the time of here.
     }];
 }
 
